@@ -3,8 +3,10 @@ import CartWidget from "./CartWidget";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-      <Link className="navbar-brand" to="/">LogoDePagina</Link>
+    <nav className="navbar navbar-expand-lg navbar-ligth bg-warning px-5">
+      <Link className="navbar-brand" to="/">
+        <img src="src\assets\logo-planeta-cel.png" alt="Logo de la página" style={{ height: '70px' }} />
+      </Link>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav me-auto">
           <li className="nav-item"><Link className="nav-link" to="/">Inicio</Link></li>
