@@ -57,7 +57,7 @@ const products = [
     "oferta": false,
     "nuevo": true,
     "categoria": "Celulares",
-    "img": "https://example.com/images/iphone_15_pro_max.jpg"
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525491_sd.jpg"
   },
   {
     "id": '5',
@@ -72,7 +72,7 @@ const products = [
     "oferta": false,
     "nuevo": false,
     "categoria": "Celulares",
-    "img": "https://example.com/images/iphone_14.jpg"
+    "img": "https://cdn.movertix.com/media/catalog/product/i/p/iphone-14-midnight-256gb_2.jpg"
   },
   {
     "id": '6',
@@ -87,7 +87,7 @@ const products = [
     "oferta": true,
     "nuevo": false,
     "categoria": "Celulares",
-    "img": "https://example.com/images/iphone_se_2022.jpg"
+    "img": "https://www.notebookcheck.net/uploads/tx_nbc2/4_zu_3_iphone_se_2022.jpg"
   },
   {
     "id": '7',
@@ -132,7 +132,7 @@ const products = [
     "oferta": true,
     "nuevo": false,
     "categoria": "Celulares",
-    "img": "https://example.com/images/poco_x6.jpg"
+    "img": "https://media.ldlc.com/r1600/ld/products/00/06/09/74/LD0006097489_0006097498.jpg"
   },
   {
     "id": '10',
@@ -147,7 +147,7 @@ const products = [
     "oferta": false,
     "nuevo": true,
     "categoria": "Celulares",
-    "img": "https://example.com/images/edge_40_pro.jpg"
+    "img": "https://www.techspot.com/images/products/2023/smartphones/org/2023-04-10-product-2.jpg"
   },
   {
     "id": '11',
@@ -162,7 +162,7 @@ const products = [
     "oferta": true,
     "nuevo": false,
     "categoria": "Celulares",
-    "img": "https://example.com/images/g84.jpg"
+    "img": "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g84-1.jpg"
   },
   {
     "id": '12',
@@ -177,7 +177,7 @@ const products = [
     "oferta": false,
     "nuevo": true,
     "categoria": "Celulares",
-    "img": "https://example.com/images/razr_40_ultra.jpg"
+    "img": "https://cdn.smart-gsm.com/blog/wp-content/uploads/2023/06/Motorola-Razr-40-Ultra.jpg"
   }
 ];
 
