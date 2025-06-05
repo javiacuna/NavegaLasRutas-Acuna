@@ -1,7 +1,7 @@
-[
+const products = [
   {
-    "id": 1,
-    "marca": "Samsung",
+    "id": '1',
+    "brand": "Samsung",
     "name": "Samsung Galaxy S23 Ultra",
     "peso": 234,
     "medida": "Grs",
@@ -15,8 +15,8 @@
     "img": "https://http2.mlstatic.com/D_NQ_NP_992349-MLA73149152709_112023-O.webp"
   },
   {
-    "id": 2,
-    "marca": "Samsung",
+    "id": '2',
+    "brand": "Samsung",
     "name": "Samsung Galaxy A54",
     "peso": 202,
     "medida": "Grs",
@@ -27,11 +27,11 @@
     "oferta": false,
     "nuevo": false,
     "categoria": "Celulares",
-    "img": "https://example.com/images/samsung_a54.jpg"
+    "img": "https://cdn.movertix.com/media/catalog/product/s/a/samsung-galaxy-a54-5g-dual-sim-awesome-black-256gb-and-8gb-ram-sm-a546b-ds_1.jpg"
   },
   {
-    "id": 3,
-    "marca": "Samsung",
+    "id": '3',
+    "brand": "Samsung",
     "name": "Samsung Galaxy Z Flip 5",
     "peso": 187,
     "medida": "Grs",
@@ -42,11 +42,11 @@
     "oferta": true,
     "nuevo": true,
     "categoria": "Celulares",
-    "img": "https://example.com/images/samsung_zflip5.jpg"
+    "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-z-flip5-5g-r1.jpg"
   },
   {
-    "id": 4,
-    "marca": "Apple",
+    "id": '4',
+    "brand": "Apple",
     "name": "iPhone 15 Pro Max",
     "peso": 221,
     "medida": "Grs",
@@ -60,8 +60,8 @@
     "img": "https://example.com/images/iphone_15_pro_max.jpg"
   },
   {
-    "id": 5,
-    "marca": "Apple",
+    "id": '5',
+    "brand": "Apple",
     "name": "iPhone 14",
     "peso": 172,
     "medida": "Grs",
@@ -75,8 +75,8 @@
     "img": "https://example.com/images/iphone_14.jpg"
   },
   {
-    "id": 6,
-    "marca": "Apple",
+    "id": '6',
+    "brand": "Apple",
     "name": "iPhone SE (2022)",
     "peso": 144,
     "medida": "Grs",
@@ -90,8 +90,8 @@
     "img": "https://example.com/images/iphone_se_2022.jpg"
   },
   {
-    "id": 7,
-    "marca": "Xiaomi",
+    "id": '7',
+    "brand": "Xiaomi",
     "name": "Xiaomi Redmi Note 13 Pro",
     "peso": 204,
     "medida": "Grs",
@@ -102,11 +102,11 @@
     "oferta": true,
     "nuevo": true,
     "categoria": "Celulares",
-    "img": "https://example.com/images/redmi_note_13_pro.jpg"
+    "img": "https://www.powerplanetonline.com/cdnassets/xiaomi_redmi_note_13_pro_4g_lila_01_l.jpg"
   },
   {
-    "id": 8,
-    "marca": "Xiaomi",
+    "id": '8',
+    "brand": "Xiaomi",
     "name": "Xiaomi 13T Pro",
     "peso": 200,
     "medida": "Grs",
@@ -117,11 +117,11 @@
     "oferta": false,
     "nuevo": true,
     "categoria": "Celulares",
-    "img": "https://example.com/images/xiaomi_13t_pro.jpg"
+    "img": "https://cdn-files.kimovil.com/default/0009/25/thumb_824996_default_big.jpg"
   },
   {
-    "id": 9,
-    "marca": "Xiaomi",
+    "id": '9',
+    "brand": "Xiaomi",
     "name": "Xiaomi Poco X6",
     "peso": 192,
     "medida": "Grs",
@@ -135,8 +135,8 @@
     "img": "https://example.com/images/poco_x6.jpg"
   },
   {
-    "id": 10,
-    "marca": "Motorola",
+    "id": '10',
+    "brand": "Motorola",
     "name": "Motorola Edge 40 Pro",
     "peso": 199,
     "medida": "Grs",
@@ -150,8 +150,8 @@
     "img": "https://example.com/images/edge_40_pro.jpg"
   },
   {
-    "id": 11,
-    "marca": "Motorola",
+    "id": '11',
+    "brand": "Motorola",
     "name": "Motorola G84",
     "peso": 180,
     "medida": "Grs",
@@ -165,8 +165,8 @@
     "img": "https://example.com/images/g84.jpg"
   },
   {
-    "id": 12,
-    "marca": "Motorola",
+    "id": '12',
+    "brand": "Motorola",
     "name": "Motorola Razr 40 Ultra",
     "peso": 188,
     "medida": "Grs",
@@ -179,4 +179,30 @@
     "categoria": "Celulares",
     "img": "https://example.com/images/razr_40_ultra.jpg"
   }
-]
+];
+
+export const getProducts = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(products);
+    }, 1000);
+  });
+};
+
+export const getProductById = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const product = products.find((prod) => prod.id === id);
+      resolve(product);
+    }, 1000);
+  });
+};
+
+export const getProductsByBrand = (brandId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const filtered = products.filter((prod) => prod.brand === brandId);
+      resolve(filtered);
+    }, 1000);
+  });
+};
